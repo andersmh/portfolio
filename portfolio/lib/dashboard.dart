@@ -35,7 +35,7 @@ class _DashboardState extends State<Dashboard> {
                             child: Container(
                               color: Colors.black,
                               child: Padding(
-                                padding: const EdgeInsets.all(15.0),
+                                padding: const EdgeInsets.all(10.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(20),
                                   child: Container(
@@ -58,91 +58,136 @@ class _DashboardState extends State<Dashboard> {
                             left: 40,
                             bottom: 40,
                             right: 40,
-                            child: Wrap(
-                              runSpacing: 20,
-                              spacing: 20,
-                              crossAxisAlignment: WrapCrossAlignment.center,
-                              alignment: WrapAlignment.center,
-                              children: [
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.of(context).push(
-                                        MaterialPageRoute(
-                                            builder: (BuildContext context) =>
-                                                TimeToDeath()));
-                                  },
-                                  child: Image.asset(
-                                    'assets/time_to_death.png',
-                                    height: 50,
-                                    width: 50,
+                            child: SingleChildScrollView(
+                              physics: BouncingScrollPhysics(),
+                              child: Wrap(
+                                runSpacing: 20,
+                                spacing: 20,
+                                crossAxisAlignment: WrapCrossAlignment.center,
+                                alignment: WrapAlignment.center,
+                                children: [
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                              builder: (BuildContext context) =>
+                                                  TimeToDeath()));
+                                    },
+                                    child: Image.asset(
+                                      'assets/time_to_death.png',
+                                      height:
+                                          MediaQuery.of(context).size.width <
+                                                  500
+                                              ? 30
+                                              : 50,
+                                      width: MediaQuery.of(context).size.width <
+                                              500
+                                          ? 30
+                                          : 50,
+                                    ),
                                   ),
-                                ),
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.of(context).push(
-                                        MaterialPageRoute(
-                                            builder: (BuildContext context) =>
-                                                Russeknutene()));
-                                  },
-                                  child: Image.asset(
-                                    'assets/russeknutene.png',
-                                    height: 50,
-                                    width: 50,
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                              builder: (BuildContext context) =>
+                                                  Russeknutene()));
+                                    },
+                                    child: Image.asset(
+                                      'assets/russeknutene.png',
+                                      height:
+                                          MediaQuery.of(context).size.width <
+                                                  500
+                                              ? 30
+                                              : 50,
+                                      width: MediaQuery.of(context).size.width <
+                                              500
+                                          ? 30
+                                          : 50,
+                                    ),
                                   ),
-                                ),
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.of(context).push(
-                                        MaterialPageRoute(
-                                            builder: (BuildContext context) =>
-                                                Rated()));
-                                  },
-                                  child: Image.asset(
-                                    'assets/rated.png',
-                                    height: 50,
-                                    width: 50,
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                              builder: (BuildContext context) =>
+                                                  Rated()));
+                                    },
+                                    child: Image.asset(
+                                      'assets/rated.png',
+                                      height:
+                                          MediaQuery.of(context).size.width <
+                                                  500
+                                              ? 30
+                                              : 50,
+                                      width: MediaQuery.of(context).size.width <
+                                              500
+                                          ? 30
+                                          : 50,
+                                    ),
                                   ),
-                                ),
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.of(context).push(
-                                        MaterialPageRoute(
-                                            builder: (BuildContext context) =>
-                                                Done()));
-                                  },
-                                  child: Image.asset(
-                                    'assets/done.png',
-                                    height: 50,
-                                    width: 50,
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                              builder: (BuildContext context) =>
+                                                  Done()));
+                                    },
+                                    child: Image.asset(
+                                      'assets/done.png',
+                                      height:
+                                          MediaQuery.of(context).size.width <
+                                                  500
+                                              ? 30
+                                              : 50,
+                                      width: MediaQuery.of(context).size.width <
+                                              500
+                                          ? 30
+                                          : 50,
+                                    ),
                                   ),
-                                ),
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.of(context).push(
-                                        MaterialPageRoute(
-                                            builder: (BuildContext context) =>
-                                                GreenScreenStudio()));
-                                  },
-                                  child: Image.asset(
-                                    'assets/green_screen_studio.png',
-                                    height: 50,
-                                    width: 50,
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                              builder: (BuildContext context) =>
+                                                  GreenScreenStudio()));
+                                    },
+                                    child: Image.asset(
+                                      'assets/green_screen_studio.png',
+                                      height:
+                                          MediaQuery.of(context).size.width <
+                                                  500
+                                              ? 30
+                                              : 50,
+                                      width: MediaQuery.of(context).size.width <
+                                              500
+                                          ? 30
+                                          : 50,
+                                    ),
                                   ),
-                                ),
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.of(context).push(
-                                        MaterialPageRoute(
-                                            builder: (BuildContext context) =>
-                                                Slurk()));
-                                  },
-                                  child: Image.asset(
-                                    'assets/slurk.png',
-                                    height: 50,
-                                    width: 50,
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.of(context).push(
+                                          MaterialPageRoute(
+                                              builder: (BuildContext context) =>
+                                                  Slurk()));
+                                    },
+                                    child: Image.asset(
+                                      'assets/slurk.png',
+                                      height:
+                                          MediaQuery.of(context).size.width <
+                                                  500
+                                              ? 30
+                                              : 50,
+                                      width: MediaQuery.of(context).size.width <
+                                              500
+                                          ? 30
+                                          : 50,
+                                    ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                         ],
