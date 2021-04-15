@@ -38,6 +38,20 @@ class _DashboardState extends State<Dashboard> {
               SizedBox(
                 height: 40,
               ),
+              Text(
+                'Apps',
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.black,
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
+              Divider(
+                color: Colors.grey,
+              ),
+              SizedBox(
+                height: 20,
+              ),
               MediaQuery.of(context).size.width < 700
                   ? Center(
                       child: Stack(
@@ -71,8 +85,8 @@ class _DashboardState extends State<Dashboard> {
                             bottom: 40,
                             right: 40,
                             child: Wrap(
-                              runSpacing: 30,
-                              spacing: 30,
+                              runSpacing: 20,
+                              spacing: 20,
                               crossAxisAlignment: WrapCrossAlignment.center,
                               alignment: WrapAlignment.center,
                               children: [
