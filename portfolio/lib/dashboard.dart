@@ -26,32 +26,6 @@ class _DashboardState extends State<Dashboard> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.max,
             children: [
-              Text(
-                'Anders\nMæhlum\nHalvorsen',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 30,
-                  fontWeight: FontWeight.w900,
-                ),
-              ),
-              SizedBox(
-                height: 40,
-              ),
-              Text(
-                'Apps',
-                style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.black,
-                  fontWeight: FontWeight.w900,
-                ),
-              ),
-              Divider(
-                color: Colors.grey,
-              ),
-              SizedBox(
-                height: 20,
-              ),
               MediaQuery.of(context).size.width < 700
                   ? Center(
                       child: Stack(

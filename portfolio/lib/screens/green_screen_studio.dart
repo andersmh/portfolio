@@ -64,7 +64,7 @@ class _GreenScreenStudioState extends State<GreenScreenStudio> {
                                     height: 10,
                                   ),
                                   Text(
-                                    'Gain prospective of how much time you have left\non this earth with Time To Death: Visualiser!\nThe best app for visualising the remaining\ntime on this earth!',
+                                    'Not Yet Implemented.',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       color: Colors.grey,
@@ -197,7 +197,7 @@ class _GreenScreenStudioState extends State<GreenScreenStudio> {
                               height: 10,
                             ),
                             Text(
-                              'Gain prospective of how much time you have left\non this earth with Time To Death: Visualiser!\nThe best app for visualising the remaining\ntime on this earth!',
+                              'Not Yet Implemented.',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 color: Colors.grey,

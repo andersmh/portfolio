@@ -64,7 +64,7 @@ class _DoneState extends State<Done> {
                                     height: 10,
                                   ),
                                   Text(
-                                    'Gain prospective of how much time you have left\non this earth with Time To Death: Visualiser!\nThe best app for visualising the remaining\ntime on this earth!',
+                                    'Not Yet Implemented.',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       color: Colors.grey,
@@ -73,7 +73,7 @@ class _DoneState extends State<Done> {
                                     ),
                                   ),
                                   Image.asset(
-                                    'assets/done/app_play_store.png',
+                                    'assets/time_to_death/app_play_store.png',
                                     width: 150,
                                   ),
                                 ],
@@ -186,7 +186,7 @@ class _DoneState extends State<Done> {
                               height: 20,
                             ),
                             Text(
-                              'Time To Death: Visualiser',
+                              'Done.',
                               style: TextStyle(
                                 color: Colors.blue,
                                 fontSize: 30,
@@ -197,7 +197,7 @@ class _DoneState extends State<Done> {
                               height: 10,
                             ),
                             Text(
-                              'Gain prospective of how much time you have left\non this earth with Time To Death: Visualiser!\nThe best app for visualising the remaining\ntime on this earth!',
+                              'Not Yet Implemented.',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 color: Colors.grey,
@@ -206,7 +206,7 @@ class _DoneState extends State<Done> {
                               ),
                             ),
                             Image.asset(
-                              'assets/done/app_play_store.png',
+                              'assets/time_to_death/app_play_store.png',
                               width: 150,
                             ),
                           ],

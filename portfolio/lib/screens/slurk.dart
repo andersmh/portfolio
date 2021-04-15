@@ -33,7 +33,7 @@ class _SlurkState extends State<Slurk> {
                             children: [
                               Flexible(
                                 child: Image.asset(
-                                  'assets/time_to_death/illustration_1.png',
+                                  'assets/slurk/illustration_1.png',
                                   width: 200,
                                 ),
                               ),
@@ -64,7 +64,7 @@ class _SlurkState extends State<Slurk> {
                                     height: 10,
                                   ),
                                   Text(
-                                    'Gain prospective of how much time you have left\non this earth with Time To Death: Visualiser!\nThe best app for visualising the remaining\ntime on this earth!',
+                                    'Not Yet Implemented.',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       color: Colors.grey,
@@ -83,7 +83,7 @@ class _SlurkState extends State<Slurk> {
                               ),
                               Flexible(
                                 child: Image.asset(
-                                  'assets/time_to_death/illustration_2.png',
+                                  'assets/slurk/illustration_2.png',
                                   width: 200,
                                 ),
                               ),
@@ -138,7 +138,7 @@ class _SlurkState extends State<Slurk> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Text(
-                                'timetodeath.app@gmail.com',
+                                'slurk.app@gmail.com',
                                 style: TextStyle(
                                   color: Colors.grey,
                                   fontSize: 16,
@@ -197,7 +197,7 @@ class _SlurkState extends State<Slurk> {
                               height: 10,
                             ),
                             Text(
-                              'Gain prospective of how much time you have left\non this earth with Time To Death: Visualiser!\nThe best app for visualising the remaining\ntime on this earth!',
+                              'Not Yet Implemented.',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 color: Colors.grey,
@@ -215,14 +215,14 @@ class _SlurkState extends State<Slurk> {
                           height: 40,
                         ),
                         Image.asset(
-                          'assets/time_to_death/illustration_1.png',
+                          'assets/slurk/illustration_1.png',
                           width: 200,
                         ),
                         SizedBox(
                           height: 20,
                         ),
                         Image.asset(
-                          'assets/time_to_death/illustration_2.png',
+                          'assets/slurk/illustration_2.png',
                           width: 200,
                         ),
                       ],
@@ -280,7 +280,7 @@ class _SlurkState extends State<Slurk> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Text(
-                              'timetodeath.app@gmail.com',
+                              'slurk.app@gmail.com',
                               style: TextStyle(
                                 color: Colors.grey,
                                 fontSize: 16,
