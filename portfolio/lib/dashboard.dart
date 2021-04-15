@@ -20,7 +20,15 @@ class _DashboardState extends State<Dashboard> {
         physics: BouncingScrollPhysics(),
         child: SafeArea(
             child: Padding(
-          padding: const EdgeInsets.all(40),
+          padding: MediaQuery.of(context).size.width < 500
+              ? const EdgeInsets.symmetric(
+                  horizontal: 20,
+                  vertical: 40,
+                )
+              : const EdgeInsets.symmetric(
+                  horizontal: 40,
+                  vertical: 40,
+                ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -39,11 +47,19 @@ class _DashboardState extends State<Dashboard> {
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(20),
                                   child: Container(
-                                    height:
-                                        MediaQuery.of(context).size.width * 0.8,
-                                    width: (MediaQuery.of(context).size.width *
-                                            0.8) /
-                                        2,
+                                    height: MediaQuery.of(context).size.width <
+                                            500
+                                        ? MediaQuery.of(context).size.width
+                                        : MediaQuery.of(context).size.width *
+                                            0.8,
+                                    width: MediaQuery.of(context).size.width <
+                                            500
+                                        ? (MediaQuery.of(context).size.width *
+                                                0.8) /
+                                            1.5
+                                        : (MediaQuery.of(context).size.width *
+                                                0.8) /
+                                            2,
                                     child: Image.asset(
                                       'assets/big_sur.jpeg',
                                       fit: BoxFit.cover,
@@ -63,7 +79,6 @@ class _DashboardState extends State<Dashboard> {
                               child: Wrap(
                                 runSpacing: 20,
                                 spacing: 20,
-                                
                                 crossAxisAlignment: WrapCrossAlignment.center,
                                 alignment: WrapAlignment.spaceAround,
                                 children: [
@@ -202,7 +217,7 @@ class _DashboardState extends State<Dashboard> {
                             child: Container(
                               color: Colors.black,
                               child: Padding(
-                                padding: const EdgeInsets.all(15.0),
+                                padding: const EdgeInsets.all(10),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(20),
                                   child: Container(
