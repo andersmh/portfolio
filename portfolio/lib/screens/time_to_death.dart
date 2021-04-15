@@ -13,6 +13,7 @@ class _TimeToDeathState extends State<TimeToDeath> {
         backgroundColor: Color(0xFFF5F4F9),
         body: AdaptableLayout(
           title: 'Time To Death: Visualiser',
+          titleColor: Colors.blue,
           text:
               'Gain prospective of how much time you have left\non this earth with Time To Death: Visualiser!\nThe best app for visualising the remaining\ntime on this earth!',
           illustration1: 'assets/time_to_death/illustration_1.png',

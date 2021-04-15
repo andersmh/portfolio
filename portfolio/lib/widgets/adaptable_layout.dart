@@ -3,6 +3,7 @@ import 'package:portfolio/privacy_policy.dart';
 
 class AdaptableLayout extends StatefulWidget {
   final String title;
+  final Color titleColor;
   final String text;
   final String logo;
   final String illustration1;
@@ -13,6 +14,7 @@ class AdaptableLayout extends StatefulWidget {
 
   AdaptableLayout({
     @required this.title,
+    @required this.titleColor,
     @required this.text,
     @required this.logo,
     @required this.illustration1,
@@ -73,7 +75,7 @@ class _AdaptableLayoutState extends State<AdaptableLayout> {
                                 Text(
                                   widget.title,
                                   style: TextStyle(
-                                    color: Colors.blue,
+                                    color: widget.titleColor,
                                     fontSize: 30,
                                     fontWeight: FontWeight.w900,
                                   ),
@@ -206,7 +208,7 @@ class _AdaptableLayoutState extends State<AdaptableLayout> {
                           Text(
                             widget.title,
                             style: TextStyle(
-                              color: Colors.blue,
+                              color: widget.titleColor,
                               fontSize: 30,
                               fontWeight: FontWeight.w900,
                             ),

@@ -13,6 +13,7 @@ class _RusseknuteneState extends State<Russeknutene> {
       backgroundColor: Color(0xFFF5F4F9),
       body: AdaptableLayout(
         title: 'Russeknutene',
+        titleColor: Colors.red,
         text:
             'Norge største russeknuteknokuranse!\nKonkurer mot naboskoler eller hele norge.\nGjør Kong Harald stolt!\n',
         logo: 'assets/russeknutene.png',

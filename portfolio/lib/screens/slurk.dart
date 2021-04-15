@@ -12,7 +12,8 @@ class _SlurkState extends State<Slurk> {
     return Scaffold(
       backgroundColor: Color(0xFFF5F4F9),
       body: AdaptableLayout(
-        title: 'Slutk',
+        title: 'Slurk',
+        titleColor: Color(0xFFEDAF40),
         text: 'Not Yet Implemented.\n',
         logo: 'assets/slurk.png',
         illustration1: 'assets/slurk/illustration_1.png',

@@ -13,6 +13,7 @@ class _RatedState extends State<Rated> {
       backgroundColor: Color(0xFFF5F4F9),
       body: AdaptableLayout(
         title: 'Rated: Rate Anything',
+        titleColor: Color(0xFF06BEB6),
         text:
             'A personal rating keeper.\nThe app lets you rate food, drinks, items\nor anything you want throughout your travels!',
         logo: 'assets/rated.png',

@@ -13,6 +13,7 @@ class _GreenScreenStudioState extends State<GreenScreenStudio> {
       backgroundColor: Color(0xFFF5F4F9),
       body: AdaptableLayout(
         title: 'Green Screen: Studio',
+        titleColor: Color(0xFF33DE00),
         text: 'Not Yet Implemented.\n',
         logo: 'assets/green_screen_studio.png',
         illustration1: 'assets/green_screen_studio/illustration_1.png',

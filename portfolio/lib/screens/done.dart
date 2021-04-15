@@ -13,6 +13,7 @@ class _DoneState extends State<Done> {
       backgroundColor: Color(0xFFF5F4F9),
       body: AdaptableLayout(
         title: 'Done.',
+        titleColor: Color(0xFF020E38),
         text: 'Not Yet Implemented.\n',
         logo: 'assets/done.png',
         illustration1: 'assets/done/illustration_1.png',
