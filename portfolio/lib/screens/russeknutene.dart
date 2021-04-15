@@ -45,7 +45,7 @@ class _RusseknuteneState extends State<Russeknutene> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Image.asset(
-                                    'assets/russeknutene/icon.png',
+                                    'assets/russeknutene.png',
                                     height: 80,
                                     width: 80,
                                   ),
@@ -178,7 +178,7 @@ class _RusseknuteneState extends State<Russeknutene> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/russeknutene/icon.png',
+                              'assets/russeknutene.png',
                               height: 80,
                               width: 80,
                             ),

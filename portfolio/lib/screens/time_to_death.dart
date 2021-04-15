@@ -45,7 +45,7 @@ class _TimeToDeathState extends State<TimeToDeath> {
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
                                   Image.asset(
-                                    'assets/time_to_death/icon.png',
+                                    'assets/time_to_death.png',
                                     height: 80,
                                     width: 80,
                                   ),
@@ -178,7 +178,7 @@ class _TimeToDeathState extends State<TimeToDeath> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Image.asset(
-                              'assets/time_to_death/icon.png',
+                              'assets/time_to_death.png',
                               height: 80,
                               width: 80,
                             ),
