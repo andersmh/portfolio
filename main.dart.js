@@ -41780,13 +41780,13 @@ break
 case C.r8:a2=a1
 a3=0
 break
-case C.nB:a2=a1/2
+case C.r9:a2=a1/2
 a3=0
 break
-case C.r9:a3=b>1?a1/(b-1):0
+case C.ra:a3=b>1?a1/(b-1):0
 a2=0
 break
-case C.ra:a3=a1/b
+case C.nB:a3=a1/b
 a2=a3/2
 break
 case C.rb:a3=a1/(b+1)
@@ -41805,13 +41805,13 @@ break
 case C.r8:a8=a7
 a9=0
 break
-case C.nB:a8=a7/2
+case C.r9:a8=a7/2
 a9=0
 break
-case C.r9:a9=f>1?a7/(f-1):0
+case C.ra:a9=f>1?a7/(f-1):0
 a8=0
 break
-case C.ra:a9=a7/f
+case C.nB:a9=a7/f
 a8=a9/2
 break
 case C.rb:a9=a7/(f+1)
@@ -54015,9 +54015,9 @@ C.BS=new X.nR(-2,-2)
 C.kI=new H.CK(0,0,0,0)
 C.iy=new N.jj("WrapAlignment.start")
 C.r8=new N.jj("WrapAlignment.end")
-C.nB=new N.jj("WrapAlignment.center")
-C.r9=new N.jj("WrapAlignment.spaceBetween")
-C.ra=new N.jj("WrapAlignment.spaceAround")
+C.r9=new N.jj("WrapAlignment.center")
+C.ra=new N.jj("WrapAlignment.spaceBetween")
+C.nB=new N.jj("WrapAlignment.spaceAround")
 C.rb=new N.jj("WrapAlignment.spaceEvenly")
 C.rc=new N.tJ("WrapCrossAlignment.start")
 C.BT=new N.tJ("WrapCrossAlignment.end")

@@ -63,8 +63,9 @@ class _DashboardState extends State<Dashboard> {
                               child: Wrap(
                                 runSpacing: 20,
                                 spacing: 20,
+                                
                                 crossAxisAlignment: WrapCrossAlignment.center,
-                                alignment: WrapAlignment.center,
+                                alignment: WrapAlignment.spaceAround,
                                 children: [
                                   GestureDetector(
                                     onTap: () {
