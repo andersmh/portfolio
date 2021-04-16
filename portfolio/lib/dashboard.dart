@@ -233,7 +233,7 @@ class _DashboardState extends State<Dashboard> {
                                         ),
                                         Expanded(
                                           child: Image.asset(
-                                            'assets/a.png',
+                                            'assets/m.png',
                                           ),
                                         ),
                                         SizedBox(
@@ -241,7 +241,7 @@ class _DashboardState extends State<Dashboard> {
                                         ),
                                         Expanded(
                                           child: Image.asset(
-                                            'assets/a.png',
+                                            'assets/h.png',
                                           ),
                                         ),
                                         SizedBox(
@@ -249,7 +249,7 @@ class _DashboardState extends State<Dashboard> {
                                         ),
                                         Expanded(
                                           child: Image.asset(
-                                            'assets/a.png',
+                                            'assets/dot.png',
                                           ),
                                         ),
                                       ],
@@ -508,7 +508,7 @@ class _DashboardState extends State<Dashboard> {
                                         ),
                                         Expanded(
                                           child: Image.asset(
-                                            'assets/a.png',
+                                            'assets/m.png',
                                           ),
                                         ),
                                         SizedBox(
@@ -516,7 +516,7 @@ class _DashboardState extends State<Dashboard> {
                                         ),
                                         Expanded(
                                           child: Image.asset(
-                                            'assets/a.png',
+                                            'assets/h.png',
                                           ),
                                         ),
                                         SizedBox(
@@ -524,7 +524,7 @@ class _DashboardState extends State<Dashboard> {
                                         ),
                                         Expanded(
                                           child: Image.asset(
-                                            'assets/a.png',
+                                            'assets/dot.png',
                                           ),
                                         ),
                                       ],
