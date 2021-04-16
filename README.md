@@ -8,4 +8,6 @@
 <img src="https://user-images.githubusercontent.com/31239471/115019382-6f659a00-9eb9-11eb-9519-9452863fd591.png" width="50">
 </p>
 
-A small portfolio of some of the apps I have created over time. Maybe I will start adding more? We'll see.
+🏆 A portfolio of various projects / achievements. The portfolio is always in progress, I will append further projects in the future (hopefully). NB: It is a website 👀
+
+For those interested, the app was built using the Flutter SDK.
