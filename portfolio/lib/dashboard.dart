@@ -274,11 +274,17 @@ class _DashboardState extends State<Dashboard> {
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(20),
                                   child: Container(
-                                    width:
-                                        MediaQuery.of(context).size.width * 0.8,
-                                    height: (MediaQuery.of(context).size.width *
-                                            0.8) /
-                                        2,
+                                    width: MediaQuery.of(context).size.width <
+                                            1400
+                                        ? MediaQuery.of(context).size.width *
+                                            0.8
+                                        : 1400 * 0.8,
+                                    height: MediaQuery.of(context).size.width <
+                                            1400
+                                        ? (MediaQuery.of(context).size.width *
+                                                0.8) /
+                                            2
+                                        : (1400 * 0.8) / 2,
                                     child: Image.asset(
                                       'assets/big_sur.jpeg',
                                       fit: BoxFit.cover,
