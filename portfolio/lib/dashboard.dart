@@ -248,8 +248,14 @@ class _DashboardState extends State<Dashboard> {
                                           width: 5,
                                         ),
                                         Expanded(
-                                          child: Image.asset(
-                                            'assets/dot.png',
+                                          child: GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/contact');
+                                            },
+                                            child: Image.asset(
+                                              'assets/contact.png',
+                                            ),
                                           ),
                                         ),
                                       ],
@@ -523,8 +529,14 @@ class _DashboardState extends State<Dashboard> {
                                           width: 5,
                                         ),
                                         Expanded(
-                                          child: Image.asset(
-                                            'assets/dot.png',
+                                          child: GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/contact');
+                                            },
+                                            child: Image.asset(
+                                              'assets/contact.png',
+                                            ),
                                           ),
                                         ),
                                       ],

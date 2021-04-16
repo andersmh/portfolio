@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/dashboard.dart';
+import 'package:portfolio/screens/contact.dart';
 import 'package:portfolio/screens/done.dart';
 import 'package:portfolio/screens/green_screen_studio.dart';
 import 'package:portfolio/screens/rated.dart';
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
         '/russeknutene': (context) => Russeknutene(),
         '/slurk': (context) => Slurk(),
         '/timetodeath': (context) => TimeToDeath(),
+        '/contact': (context) => Contact(),
       },
       initialRoute: '/',
     );
