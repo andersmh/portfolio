@@ -85,70 +85,58 @@ class _DashboardState extends State<Dashboard> {
                                         crossAxisSpacing: 10,
                                         mainAxisSpacing: 10,
                                         children: [
-                                          Expanded(
-                                            child: GestureDetector(
-                                              onTap: () {
-                                                Navigator.pushNamed(
-                                                    context, '/timetodeath');
-                                              },
-                                              child: Image.asset(
-                                                'assets/time_to_death.png',
-                                              ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/timetodeath');
+                                            },
+                                            child: Image.asset(
+                                              'assets/time_to_death.png',
                                             ),
                                           ),
-                                          Expanded(
-                                            child: GestureDetector(
-                                              onTap: () {
-                                                Navigator.pushNamed(
-                                                    context, '/russeknutene');
-                                              },
-                                              child: Image.asset(
-                                                'assets/russeknutene.png',
-                                              ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/russeknutene');
+                                            },
+                                            child: Image.asset(
+                                              'assets/russeknutene.png',
                                             ),
                                           ),
-                                          Expanded(
-                                            child: GestureDetector(
-                                              onTap: () {
-                                                Navigator.pushNamed(
-                                                    context, '/rated');
-                                              },
-                                              child: Image.asset(
-                                                'assets/rated.png',
-                                              ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/rated');
+                                            },
+                                            child: Image.asset(
+                                              'assets/rated.png',
                                             ),
                                           ),
-                                          Expanded(
-                                            child: GestureDetector(
-                                              onTap: () {
-                                                Navigator.pushNamed(
-                                                    context, '/done');
-                                              },
-                                              child: Image.asset(
-                                                'assets/done.png',
-                                              ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/done');
+                                            },
+                                            child: Image.asset(
+                                              'assets/done.png',
                                             ),
                                           ),
-                                          Expanded(
-                                            child: GestureDetector(
-                                              onTap: () {
-                                                Navigator.pushNamed(context,
-                                                    '/green_screen_studio');
-                                              },
-                                              child: Image.asset(
-                                                'assets/green_screen_studio.png',
-                                              ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(context,
+                                                  '/green_screen_studio');
+                                            },
+                                            child: Image.asset(
+                                              'assets/green_screen_studio.png',
                                             ),
                                           ),
-                                          Expanded(
-                                            child: GestureDetector(
-                                              onTap: () {
-                                                Navigator.pushNamed(
-                                                    context, '/slurk');
-                                              },
-                                              child: Image.asset(
-                                                'assets/slurk.png',
-                                              ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/slurk');
+                                            },
+                                            child: Image.asset(
+                                              'assets/slurk.png',
                                             ),
                                           ),
                                         ],
@@ -158,70 +146,58 @@ class _DashboardState extends State<Dashboard> {
                                         crossAxisSpacing: 10,
                                         mainAxisSpacing: 10,
                                         children: [
-                                          Expanded(
-                                            child: GestureDetector(
-                                              onTap: () {
-                                                Navigator.pushNamed(
-                                                    context, '/timetodeath');
-                                              },
-                                              child: Image.asset(
-                                                'assets/time_to_death.png',
-                                              ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/timetodeath');
+                                            },
+                                            child: Image.asset(
+                                              'assets/time_to_death.png',
                                             ),
                                           ),
-                                          Expanded(
-                                            child: GestureDetector(
-                                              onTap: () {
-                                                Navigator.pushNamed(
-                                                    context, '/russeknutene');
-                                              },
-                                              child: Image.asset(
-                                                'assets/russeknutene.png',
-                                              ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/russeknutene');
+                                            },
+                                            child: Image.asset(
+                                              'assets/russeknutene.png',
                                             ),
                                           ),
-                                          Expanded(
-                                            child: GestureDetector(
-                                              onTap: () {
-                                                Navigator.pushNamed(
-                                                    context, '/rated');
-                                              },
-                                              child: Image.asset(
-                                                'assets/rated.png',
-                                              ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/rated');
+                                            },
+                                            child: Image.asset(
+                                              'assets/rated.png',
                                             ),
                                           ),
-                                          Expanded(
-                                            child: GestureDetector(
-                                              onTap: () {
-                                                Navigator.pushNamed(
-                                                    context, '/done');
-                                              },
-                                              child: Image.asset(
-                                                'assets/done.png',
-                                              ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/done');
+                                            },
+                                            child: Image.asset(
+                                              'assets/done.png',
                                             ),
                                           ),
-                                          Expanded(
-                                            child: GestureDetector(
-                                              onTap: () {
-                                                Navigator.pushNamed(context,
-                                                    '/green_screen_studio');
-                                              },
-                                              child: Image.asset(
-                                                'assets/green_screen_studio.png',
-                                              ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(context,
+                                                  '/green_screen_studio');
+                                            },
+                                            child: Image.asset(
+                                              'assets/green_screen_studio.png',
                                             ),
                                           ),
-                                          Expanded(
-                                            child: GestureDetector(
-                                              onTap: () {
-                                                Navigator.pushNamed(
-                                                    context, '/slurk');
-                                              },
-                                              child: Image.asset(
-                                                'assets/slurk.png',
-                                              ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/slurk');
+                                            },
+                                            child: Image.asset(
+                                              'assets/slurk.png',
                                             ),
                                           ),
                                         ],
