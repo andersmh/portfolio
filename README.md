@@ -1,6 +1,6 @@
 
 # Portfolio
-![a](https://user-images.githubusercontent.com/31239471/115019428-7db3b600-9eb9-11eb-9e6a-49004b76cd02.png | width=50)
+![a](https://user-images.githubusercontent.com/31239471/115019428-7db3b600-9eb9-11eb-9e6a-49004b76cd02.png)[width=50]
 ![dot](https://user-images.githubusercontent.com/31239471/115019384-712f5d80-9eb9-11eb-801a-e56337f16c36.png | width=50)
 ![m](https://user-images.githubusercontent.com/31239471/115019371-6bd21300-9eb9-11eb-911c-b48d978dbd1e.png | width=50)
 ![dot](https://user-images.githubusercontent.com/31239471/115019384-712f5d80-9eb9-11eb-801a-e56337f16c36.png | width=50)
