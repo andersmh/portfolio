@@ -10,4 +10,4 @@
 
 🏆 A portfolio of various projects / achievements. The portfolio is always in progress, I will append further projects in the future (hopefully). NB: It is a website 👀
 
-For those interested, the app was built using the Flutter SDK.
+For those interested, the app was built using the Flutter SDK whilst all of the icons and similar was created using Adobe XD and Figma.
