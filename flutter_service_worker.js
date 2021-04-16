@@ -4,21 +4,23 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "version.json": "426313f2f3133c2f20415344c4a22df3",
-"index.html": "394ae1e9f2babe649ef7dab699181e0f",
-"/": "394ae1e9f2babe649ef7dab699181e0f",
-"main.dart.js": "5e85ea0d93917b66e120f5892e61978e",
+"index.html": "1cb349ca2c4a741890812a9aeb955702",
+"/": "1cb349ca2c4a741890812a9aeb955702",
+"main.dart.js": "634fb3a8a666a70393e56a83e42b45c2",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "manifest.json": "a83bbbd9d23ea4d752fbcd44cdc544fa",
-"assets/AssetManifest.json": "d39b92732287881ad247ae63cc6e4b85",
+"assets/AssetManifest.json": "86601ef1f2a270baf420f30c50b73022",
 "assets/NOTICES": "ee002ab081c0a1b3d66f21c8161a86a9",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "assets/assets/green_screen_studio/illustration_2.png": "dc038c521f28f62a37ff11f6aad4289d",
 "assets/assets/green_screen_studio/illustration_1.png": "87d8eacba8f36d4c7513fa2dcbae1daa",
+"assets/assets/h.png": "28a8445e45d18aea9711087593fa2e7d",
 "assets/assets/app_play_store.png": "e3e1fe9bf0c1d73af6ae6cc614549f77",
+"assets/assets/m.png": "ff49be8229018beaea35275f50f1f915",
 "assets/assets/russeknutene/illustration_2.png": "e219950f6f32064d4d9b8d155cc7b542",
 "assets/assets/russeknutene/illustration_1.png": "775000a275cf0f589b4cd5c3c6326041",
 "assets/assets/time_to_death.png": "67ff2233072a2978b6b0a59391af9556",
@@ -34,7 +36,8 @@ const RESOURCES = {
 "assets/assets/time_to_death/illustration_2.png": "08c888b4cc5224709d84920a05cd106d",
 "assets/assets/time_to_death/illustration_3.png": "d925e763e77a3bf4e6ce347bce257f71",
 "assets/assets/time_to_death/illustration_1.png": "ff94c31207b8fc33f4cb72e43c9d626e",
-"assets/assets/time_to_death/illustration_4.png": "4b09aa7c762421ef574a7b218ffd873a"
+"assets/assets/time_to_death/illustration_4.png": "4b09aa7c762421ef574a7b218ffd873a",
+"assets/assets/a.png": "034ee85cf3a919dc7164eca579d5bb99"
 };
 
 // The application shell files that are downloaded before a service worker can

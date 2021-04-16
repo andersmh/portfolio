@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/screens/done.dart';
-import 'package:portfolio/screens/green_screen_studio.dart';
-import 'package:portfolio/screens/rated.dart';
-import 'package:portfolio/screens/russeknutene.dart';
-import 'package:portfolio/screens/slurk.dart';
-import 'package:portfolio/screens/time_to_death.dart';
+import 'package:flutter/rendering.dart';
+import 'package:flutter_swiper/flutter_swiper.dart';
 
 class Dashboard extends StatefulWidget {
   @override
@@ -70,128 +66,221 @@ class _DashboardState extends State<Dashboard> {
                             ),
                           ),
                           Positioned(
-                            top: 40,
-                            left: 40,
-                            bottom: 40,
-                            right: 40,
-                            child: SingleChildScrollView(
-                              physics: BouncingScrollPhysics(),
-                              child: Wrap(
-                                runSpacing: 20,
-                                spacing: 20,
-                                crossAxisAlignment: WrapCrossAlignment.center,
-                                alignment: WrapAlignment.spaceAround,
-                                children: [
-                                  GestureDetector(
-                                    onTap: () {
-                                      Navigator.pushNamed(
-                                          context, '/timetodeath');
-                                    },
-                                    child: Image.asset(
-                                      'assets/time_to_death.png',
-                                      height:
-                                          MediaQuery.of(context).size.width <
-                                                  500
-                                              ? 30
-                                              : 50,
-                                      width: MediaQuery.of(context).size.width <
-                                              500
-                                          ? 30
-                                          : 50,
+                            top: 20,
+                            left: 20,
+                            right: 20,
+                            bottom: 20,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Expanded(
+                                  child: Swiper.children(
+                                    scrollDirection: Axis.horizontal,
+                                    pagination: SwiperPagination(),
+                                    children: [
+                                      GridView.count(
+                                        crossAxisCount: 4,
+                                        crossAxisSpacing: 10,
+                                        mainAxisSpacing: 10,
+                                        children: [
+                                          Expanded(
+                                            child: GestureDetector(
+                                              onTap: () {
+                                                Navigator.pushNamed(
+                                                    context, '/timetodeath');
+                                              },
+                                              child: Image.asset(
+                                                'assets/time_to_death.png',
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: GestureDetector(
+                                              onTap: () {
+                                                Navigator.pushNamed(
+                                                    context, '/russeknutene');
+                                              },
+                                              child: Image.asset(
+                                                'assets/russeknutene.png',
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: GestureDetector(
+                                              onTap: () {
+                                                Navigator.pushNamed(
+                                                    context, '/rated');
+                                              },
+                                              child: Image.asset(
+                                                'assets/rated.png',
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: GestureDetector(
+                                              onTap: () {
+                                                Navigator.pushNamed(
+                                                    context, '/done');
+                                              },
+                                              child: Image.asset(
+                                                'assets/done.png',
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: GestureDetector(
+                                              onTap: () {
+                                                Navigator.pushNamed(context,
+                                                    '/green_screen_studio');
+                                              },
+                                              child: Image.asset(
+                                                'assets/green_screen_studio.png',
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: GestureDetector(
+                                              onTap: () {
+                                                Navigator.pushNamed(
+                                                    context, '/slurk');
+                                              },
+                                              child: Image.asset(
+                                                'assets/slurk.png',
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      GridView.count(
+                                        crossAxisCount: 4,
+                                        crossAxisSpacing: 10,
+                                        mainAxisSpacing: 10,
+                                        children: [
+                                          Expanded(
+                                            child: GestureDetector(
+                                              onTap: () {
+                                                Navigator.pushNamed(
+                                                    context, '/timetodeath');
+                                              },
+                                              child: Image.asset(
+                                                'assets/time_to_death.png',
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: GestureDetector(
+                                              onTap: () {
+                                                Navigator.pushNamed(
+                                                    context, '/russeknutene');
+                                              },
+                                              child: Image.asset(
+                                                'assets/russeknutene.png',
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: GestureDetector(
+                                              onTap: () {
+                                                Navigator.pushNamed(
+                                                    context, '/rated');
+                                              },
+                                              child: Image.asset(
+                                                'assets/rated.png',
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: GestureDetector(
+                                              onTap: () {
+                                                Navigator.pushNamed(
+                                                    context, '/done');
+                                              },
+                                              child: Image.asset(
+                                                'assets/done.png',
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: GestureDetector(
+                                              onTap: () {
+                                                Navigator.pushNamed(context,
+                                                    '/green_screen_studio');
+                                              },
+                                              child: Image.asset(
+                                                'assets/green_screen_studio.png',
+                                              ),
+                                            ),
+                                          ),
+                                          Expanded(
+                                            child: GestureDetector(
+                                              onTap: () {
+                                                Navigator.pushNamed(
+                                                    context, '/slurk');
+                                              },
+                                              child: Image.asset(
+                                                'assets/slurk.png',
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Container(
+                                  height: 50,
+                                  width: MediaQuery.of(context).size.width,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white.withOpacity(0.6),
+                                    borderRadius: BorderRadius.circular(15),
+                                  ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      horizontal: 5,
+                                      vertical: 5,
+                                    ),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        Expanded(
+                                          child: Image.asset(
+                                            'assets/a.png',
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 5,
+                                        ),
+                                        Expanded(
+                                          child: Image.asset(
+                                            'assets/a.png',
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 5,
+                                        ),
+                                        Expanded(
+                                          child: Image.asset(
+                                            'assets/a.png',
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 5,
+                                        ),
+                                        Expanded(
+                                          child: Image.asset(
+                                            'assets/a.png',
+                                          ),
+                                        ),
+                                      ],
                                     ),
                                   ),
-                                  GestureDetector(
-                                    onTap: () {
-                                      Navigator.pushNamed(
-                                          context, '/russeknutene');
-                                    },
-                                    child: Image.asset(
-                                      'assets/russeknutene.png',
-                                      height:
-                                          MediaQuery.of(context).size.width <
-                                                  500
-                                              ? 30
-                                              : 50,
-                                      width: MediaQuery.of(context).size.width <
-                                              500
-                                          ? 30
-                                          : 50,
-                                    ),
-                                  ),
-                                  GestureDetector(
-                                    onTap: () {
-                                      Navigator.pushNamed(context, '/rated');
-                                    },
-                                    child: Image.asset(
-                                      'assets/rated.png',
-                                      height:
-                                          MediaQuery.of(context).size.width <
-                                                  500
-                                              ? 30
-                                              : 50,
-                                      width: MediaQuery.of(context).size.width <
-                                              500
-                                          ? 30
-                                          : 50,
-                                    ),
-                                  ),
-                                  GestureDetector(
-                                    onTap: () {
-                                      Navigator.of(context).push(
-                                          MaterialPageRoute(
-                                              builder: (BuildContext context) =>
-                                                  Done()));
-                                    },
-                                    child: Image.asset(
-                                      'assets/done.png',
-                                      height:
-                                          MediaQuery.of(context).size.width <
-                                                  500
-                                              ? 30
-                                              : 50,
-                                      width: MediaQuery.of(context).size.width <
-                                              500
-                                          ? 30
-                                          : 50,
-                                    ),
-                                  ),
-                                  GestureDetector(
-                                    onTap: () {
-                                      Navigator.pushNamed(
-                                          context, '/greenscreenstudio');
-                                    },
-                                    child: Image.asset(
-                                      'assets/green_screen_studio.png',
-                                      height:
-                                          MediaQuery.of(context).size.width <
-                                                  500
-                                              ? 30
-                                              : 50,
-                                      width: MediaQuery.of(context).size.width <
-                                              500
-                                          ? 30
-                                          : 50,
-                                    ),
-                                  ),
-                                  GestureDetector(
-                                    onTap: () {
-                                      Navigator.pushNamed(context, '/slurk');
-                                    },
-                                    child: Image.asset(
-                                      'assets/slurk.png',
-                                      height:
-                                          MediaQuery.of(context).size.width <
-                                                  500
-                                              ? 30
-                                              : 50,
-                                      width: MediaQuery.of(context).size.width <
-                                              500
-                                          ? 30
-                                          : 50,
-                                    ),
-                                  ),
-                                ],
-                              ),
+                                ),
+                              ],
                             ),
                           ),
                         ],
@@ -224,92 +313,240 @@ class _DashboardState extends State<Dashboard> {
                             ),
                           ),
                           Positioned(
-                            top: 40,
-                            left: 40,
-                            bottom: 40,
-                            right: 40,
-                            child: Wrap(
-                              runSpacing: 30,
-                              spacing: 30,
-                              crossAxisAlignment: WrapCrossAlignment.center,
-                              alignment: WrapAlignment.start,
+                            top: 20,
+                            left: 20,
+                            bottom: 20,
+                            right: 20,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisSize: MainAxisSize.max,
                               children: [
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.of(context).push(
-                                        MaterialPageRoute(
-                                            builder: (BuildContext context) =>
-                                                TimeToDeath()));
-                                  },
-                                  child: Image.asset(
-                                    'assets/time_to_death.png',
-                                    height: 50,
-                                    width: 50,
+                                Expanded(
+                                  child: Swiper.children(
+                                    scrollDirection: Axis.horizontal,
+                                    pagination: SwiperPagination(),
+                                    children: [
+                                      Wrap(
+                                        runSpacing: 10,
+                                        spacing: 10,
+                                        children: [
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/timetodeath');
+                                            },
+                                            child: Container(
+                                              width: 45,
+                                              height: 45,
+                                              child: Image.asset(
+                                                'assets/time_to_death.png',
+                                              ),
+                                            ),
+                                          ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/russeknutene');
+                                            },
+                                            child: Container(
+                                              width: 45,
+                                              height: 45,
+                                              child: Image.asset(
+                                                'assets/russeknutene.png',
+                                              ),
+                                            ),
+                                          ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/rated');
+                                            },
+                                            child: Container(
+                                              width: 45,
+                                              height: 45,
+                                              child: Image.asset(
+                                                'assets/rated.png',
+                                              ),
+                                            ),
+                                          ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/done');
+                                            },
+                                            child: Container(
+                                              width: 45,
+                                              height: 45,
+                                              child: Image.asset(
+                                                'assets/done.png',
+                                              ),
+                                            ),
+                                          ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(context,
+                                                  '/green_screen_studio');
+                                            },
+                                            child: Container(
+                                              width: 45,
+                                              height: 45,
+                                              child: Image.asset(
+                                                'assets/green_screen_studio.png',
+                                              ),
+                                            ),
+                                          ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/slurk');
+                                            },
+                                            child: Container(
+                                              width: 45,
+                                              height: 45,
+                                              child: Image.asset(
+                                                'assets/slurk.png',
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                      Wrap(
+                                        runSpacing: 10,
+                                        spacing: 10,
+                                        children: [
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/timetodeath');
+                                            },
+                                            child: Container(
+                                              width: 45,
+                                              height: 45,
+                                              child: Image.asset(
+                                                'assets/time_to_death.png',
+                                              ),
+                                            ),
+                                          ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/russeknutene');
+                                            },
+                                            child: Container(
+                                              width: 45,
+                                              height: 45,
+                                              child: Image.asset(
+                                                'assets/russeknutene.png',
+                                              ),
+                                            ),
+                                          ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/rated');
+                                            },
+                                            child: Container(
+                                              width: 45,
+                                              height: 45,
+                                              child: Image.asset(
+                                                'assets/rated.png',
+                                              ),
+                                            ),
+                                          ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/done');
+                                            },
+                                            child: Container(
+                                              width: 45,
+                                              height: 45,
+                                              child: Image.asset(
+                                                'assets/done.png',
+                                              ),
+                                            ),
+                                          ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(context,
+                                                  '/green_screen_studio');
+                                            },
+                                            child: Container(
+                                              width: 45,
+                                              height: 45,
+                                              child: Image.asset(
+                                                'assets/green_screen_studio.png',
+                                              ),
+                                            ),
+                                          ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                  context, '/slurk');
+                                            },
+                                            child: Container(
+                                              width: 45,
+                                              height: 45,
+                                              child: Image.asset(
+                                                'assets/slurk.png',
+                                              ),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
                                   ),
                                 ),
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.of(context).push(
-                                        MaterialPageRoute(
-                                            builder: (BuildContext context) =>
-                                                Russeknutene()));
-                                  },
-                                  child: Image.asset(
-                                    'assets/russeknutene.png',
-                                    height: 50,
-                                    width: 50,
+                                Container(
+                                  height: 50,
+                                  width: 250,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white.withOpacity(0.6),
+                                    borderRadius: BorderRadius.circular(15),
                                   ),
-                                ),
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.of(context).push(
-                                        MaterialPageRoute(
-                                            builder: (BuildContext context) =>
-                                                Rated()));
-                                  },
-                                  child: Image.asset(
-                                    'assets/rated.png',
-                                    height: 50,
-                                    width: 50,
-                                  ),
-                                ),
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.of(context).push(
-                                        MaterialPageRoute(
-                                            builder: (BuildContext context) =>
-                                                Done()));
-                                  },
-                                  child: Image.asset(
-                                    'assets/done.png',
-                                    height: 50,
-                                    width: 50,
-                                  ),
-                                ),
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.of(context).push(
-                                        MaterialPageRoute(
-                                            builder: (BuildContext context) =>
-                                                GreenScreenStudio()));
-                                  },
-                                  child: Image.asset(
-                                    'assets/green_screen_studio.png',
-                                    height: 50,
-                                    width: 50,
-                                  ),
-                                ),
-                                GestureDetector(
-                                  onTap: () {
-                                    Navigator.of(context).push(
-                                        MaterialPageRoute(
-                                            builder: (BuildContext context) =>
-                                                Slurk()));
-                                  },
-                                  child: Image.asset(
-                                    'assets/slurk.png',
-                                    height: 50,
-                                    width: 50,
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      horizontal: 5,
+                                      vertical: 5,
+                                    ),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        Expanded(
+                                          child: Image.asset(
+                                            'assets/a.png',
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 5,
+                                        ),
+                                        Expanded(
+                                          child: Image.asset(
+                                            'assets/a.png',
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 5,
+                                        ),
+                                        Expanded(
+                                          child: Image.asset(
+                                            'assets/a.png',
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 5,
+                                        ),
+                                        Expanded(
+                                          child: Image.asset(
+                                            'assets/a.png',
+                                          ),
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
