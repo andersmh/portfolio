@@ -34,7 +34,7 @@ class _DashboardState extends State<Dashboard> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.max,
             children: [
-              MediaQuery.of(context).size.width < 700
+              MediaQuery.of(context).size.width < 500
                   ? Center(
                       child: Stack(
                         children: [
@@ -84,10 +84,8 @@ class _DashboardState extends State<Dashboard> {
                                 children: [
                                   GestureDetector(
                                     onTap: () {
-                                      Navigator.of(context).push(
-                                          MaterialPageRoute(
-                                              builder: (BuildContext context) =>
-                                                  TimeToDeath()));
+                                      Navigator.pushNamed(
+                                          context, '/timetodeath');
                                     },
                                     child: Image.asset(
                                       'assets/time_to_death.png',
@@ -104,10 +102,8 @@ class _DashboardState extends State<Dashboard> {
                                   ),
                                   GestureDetector(
                                     onTap: () {
-                                      Navigator.of(context).push(
-                                          MaterialPageRoute(
-                                              builder: (BuildContext context) =>
-                                                  Russeknutene()));
+                                      Navigator.pushNamed(
+                                          context, '/russeknutene');
                                     },
                                     child: Image.asset(
                                       'assets/russeknutene.png',
@@ -124,10 +120,7 @@ class _DashboardState extends State<Dashboard> {
                                   ),
                                   GestureDetector(
                                     onTap: () {
-                                      Navigator.of(context).push(
-                                          MaterialPageRoute(
-                                              builder: (BuildContext context) =>
-                                                  Rated()));
+                                      Navigator.pushNamed(context, '/rated');
                                     },
                                     child: Image.asset(
                                       'assets/rated.png',
@@ -164,10 +157,8 @@ class _DashboardState extends State<Dashboard> {
                                   ),
                                   GestureDetector(
                                     onTap: () {
-                                      Navigator.of(context).push(
-                                          MaterialPageRoute(
-                                              builder: (BuildContext context) =>
-                                                  GreenScreenStudio()));
+                                      Navigator.pushNamed(
+                                          context, '/greenscreenstudio');
                                     },
                                     child: Image.asset(
                                       'assets/green_screen_studio.png',
@@ -184,10 +175,7 @@ class _DashboardState extends State<Dashboard> {
                                   ),
                                   GestureDetector(
                                     onTap: () {
-                                      Navigator.of(context).push(
-                                          MaterialPageRoute(
-                                              builder: (BuildContext context) =>
-                                                  Slurk()));
+                                      Navigator.pushNamed(context, '/slurk');
                                     },
                                     child: Image.asset(
                                       'assets/slurk.png',
@@ -243,6 +231,8 @@ class _DashboardState extends State<Dashboard> {
                             child: Wrap(
                               runSpacing: 30,
                               spacing: 30,
+                              crossAxisAlignment: WrapCrossAlignment.center,
+                              alignment: WrapAlignment.start,
                               children: [
                                 GestureDetector(
                                   onTap: () {
@@ -328,6 +318,20 @@ class _DashboardState extends State<Dashboard> {
                         ],
                       ),
                     ),
+              SizedBox(
+                height: 20,
+              ),
+              Center(
+                child: Text(
+                  'Click on one of the app icons to access the app content!',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.grey.withOpacity(0.5),
+                    fontWeight: FontWeight.w900,
+                    fontSize: 16,
+                  ),
+                ),
+              )
             ],
           ),
         )),
