@@ -8,8 +8,6 @@
 <img src="https://user-images.githubusercontent.com/31239471/115019382-6f659a00-9eb9-11eb-9519-9452863fd591.png" width="50">
 </p>
 
-🏆 A portfolio of various projects / achievements. The portfolio is always in progress, I will append further projects in the future (hopefully). NB: It is a website 👀
-
-The website is also used as a terms of service and privacy policy manager for each of the publicly available apps and services I have created. 
+A portfolio of various projects, achievements, and possibly other random stuff? The portfolio is always in progress, as such, I will append further projects in the future (hopefully). The website is also used as a terms of service and privacy policy manager for each of the publicly available apps and services I have created. 
 
 For those interested, the app was built using the Flutter SDK whilst all of the icons and similar was created using Adobe XD and Figma 🎨
