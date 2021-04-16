@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:portfolio/widgets/large_icon_element.dart';
+import 'package:portfolio/widgets/small_icon_element.dart';
 
 class Dashboard extends StatefulWidget {
   @override
@@ -83,15 +85,18 @@ class _DashboardState extends State<Dashboard> {
                                       GridView.count(
                                         crossAxisCount: 4,
                                         crossAxisSpacing: 10,
-                                        mainAxisSpacing: 10,
+                                        mainAxisSpacing: 20,
+                                        childAspectRatio: 0.65,
+                                        scrollDirection: Axis.vertical,
                                         children: [
                                           GestureDetector(
                                             onTap: () {
                                               Navigator.pushNamed(
                                                   context, '/timetodeath');
                                             },
-                                            child: Image.asset(
-                                              'assets/time_to_death.png',
+                                            child: SmallIconElement(
+                                              image: 'assets/time_to_death.png',
+                                              name: 'Time To Death',
                                             ),
                                           ),
                                           GestureDetector(
@@ -99,8 +104,9 @@ class _DashboardState extends State<Dashboard> {
                                               Navigator.pushNamed(
                                                   context, '/russeknutene');
                                             },
-                                            child: Image.asset(
-                                              'assets/russeknutene.png',
+                                            child: SmallIconElement(
+                                              image: 'assets/russeknutene.png',
+                                              name: 'Russeknutene',
                                             ),
                                           ),
                                           GestureDetector(
@@ -108,8 +114,9 @@ class _DashboardState extends State<Dashboard> {
                                               Navigator.pushNamed(
                                                   context, '/rated');
                                             },
-                                            child: Image.asset(
-                                              'assets/rated.png',
+                                            child: SmallIconElement(
+                                              image: 'assets/rated.png',
+                                              name: 'Rated: Rate Anything.',
                                             ),
                                           ),
                                           GestureDetector(
@@ -117,8 +124,9 @@ class _DashboardState extends State<Dashboard> {
                                               Navigator.pushNamed(
                                                   context, '/done');
                                             },
-                                            child: Image.asset(
-                                              'assets/done.png',
+                                            child: SmallIconElement(
+                                              image: 'assets/done.png',
+                                              name: 'Done.',
                                             ),
                                           ),
                                           GestureDetector(
@@ -126,8 +134,10 @@ class _DashboardState extends State<Dashboard> {
                                               Navigator.pushNamed(context,
                                                   '/green_screen_studio');
                                             },
-                                            child: Image.asset(
-                                              'assets/green_screen_studio.png',
+                                            child: SmallIconElement(
+                                              image:
+                                                  'assets/green_screen_studio.png',
+                                              name: 'Green Screen: Studio',
                                             ),
                                           ),
                                           GestureDetector(
@@ -135,8 +145,9 @@ class _DashboardState extends State<Dashboard> {
                                               Navigator.pushNamed(
                                                   context, '/slurk');
                                             },
-                                            child: Image.asset(
-                                              'assets/slurk.png',
+                                            child: SmallIconElement(
+                                              image: 'assets/slurk.png',
+                                              name: 'Slurk',
                                             ),
                                           ),
                                         ],
@@ -145,60 +156,11 @@ class _DashboardState extends State<Dashboard> {
                                         crossAxisCount: 4,
                                         crossAxisSpacing: 10,
                                         mainAxisSpacing: 10,
+                                        childAspectRatio: 0.65,
                                         children: [
-                                          GestureDetector(
-                                            onTap: () {
-                                              Navigator.pushNamed(
-                                                  context, '/timetodeath');
-                                            },
-                                            child: Image.asset(
-                                              'assets/time_to_death.png',
-                                            ),
-                                          ),
-                                          GestureDetector(
-                                            onTap: () {
-                                              Navigator.pushNamed(
-                                                  context, '/russeknutene');
-                                            },
-                                            child: Image.asset(
-                                              'assets/russeknutene.png',
-                                            ),
-                                          ),
-                                          GestureDetector(
-                                            onTap: () {
-                                              Navigator.pushNamed(
-                                                  context, '/rated');
-                                            },
-                                            child: Image.asset(
-                                              'assets/rated.png',
-                                            ),
-                                          ),
-                                          GestureDetector(
-                                            onTap: () {
-                                              Navigator.pushNamed(
-                                                  context, '/done');
-                                            },
-                                            child: Image.asset(
-                                              'assets/done.png',
-                                            ),
-                                          ),
-                                          GestureDetector(
-                                            onTap: () {
-                                              Navigator.pushNamed(context,
-                                                  '/green_screen_studio');
-                                            },
-                                            child: Image.asset(
-                                              'assets/green_screen_studio.png',
-                                            ),
-                                          ),
-                                          GestureDetector(
-                                            onTap: () {
-                                              Navigator.pushNamed(
-                                                  context, '/slurk');
-                                            },
-                                            child: Image.asset(
-                                              'assets/slurk.png',
-                                            ),
+                                          SmallIconElement(
+                                            image: 'assets/dot.png',
+                                            name: 'Nothing Here',
                                           ),
                                         ],
                                       ),
@@ -316,20 +278,17 @@ class _DashboardState extends State<Dashboard> {
                                     pagination: SwiperPagination(),
                                     children: [
                                       Wrap(
-                                        runSpacing: 10,
-                                        spacing: 10,
+                                        runSpacing: 20,
+                                        spacing: 20,
                                         children: [
                                           GestureDetector(
                                             onTap: () {
                                               Navigator.pushNamed(
                                                   context, '/timetodeath');
                                             },
-                                            child: Container(
-                                              width: 45,
-                                              height: 45,
-                                              child: Image.asset(
-                                                'assets/time_to_death.png',
-                                              ),
+                                            child: LargeIconElement(
+                                              image: 'assets/time_to_death.png',
+                                              name: 'Time To Death',
                                             ),
                                           ),
                                           GestureDetector(
@@ -337,12 +296,9 @@ class _DashboardState extends State<Dashboard> {
                                               Navigator.pushNamed(
                                                   context, '/russeknutene');
                                             },
-                                            child: Container(
-                                              width: 45,
-                                              height: 45,
-                                              child: Image.asset(
-                                                'assets/russeknutene.png',
-                                              ),
+                                            child: LargeIconElement(
+                                              image: 'assets/russeknutene.png',
+                                              name: 'Russeknutene',
                                             ),
                                           ),
                                           GestureDetector(
@@ -350,12 +306,9 @@ class _DashboardState extends State<Dashboard> {
                                               Navigator.pushNamed(
                                                   context, '/rated');
                                             },
-                                            child: Container(
-                                              width: 45,
-                                              height: 45,
-                                              child: Image.asset(
-                                                'assets/rated.png',
-                                              ),
+                                            child: LargeIconElement(
+                                              image: 'assets/rated.png',
+                                              name: 'Rated: Rate Anything.',
                                             ),
                                           ),
                                           GestureDetector(
@@ -363,12 +316,9 @@ class _DashboardState extends State<Dashboard> {
                                               Navigator.pushNamed(
                                                   context, '/done');
                                             },
-                                            child: Container(
-                                              width: 45,
-                                              height: 45,
-                                              child: Image.asset(
-                                                'assets/done.png',
-                                              ),
+                                            child: LargeIconElement(
+                                              image: 'assets/done.png',
+                                              name: 'Done.',
                                             ),
                                           ),
                                           GestureDetector(
@@ -376,12 +326,10 @@ class _DashboardState extends State<Dashboard> {
                                               Navigator.pushNamed(context,
                                                   '/green_screen_studio');
                                             },
-                                            child: Container(
-                                              width: 45,
-                                              height: 45,
-                                              child: Image.asset(
-                                                'assets/green_screen_studio.png',
-                                              ),
+                                            child: LargeIconElement(
+                                              image:
+                                                  'assets/green_screen_studio.png',
+                                              name: 'Green Screen: Studio',
                                             ),
                                           ),
                                           GestureDetector(
@@ -389,97 +337,20 @@ class _DashboardState extends State<Dashboard> {
                                               Navigator.pushNamed(
                                                   context, '/slurk');
                                             },
-                                            child: Container(
-                                              width: 45,
-                                              height: 45,
-                                              child: Image.asset(
-                                                'assets/slurk.png',
-                                              ),
+                                            child: LargeIconElement(
+                                              image: 'assets/slurk.png',
+                                              name: 'Slurk',
                                             ),
                                           ),
                                         ],
                                       ),
                                       Wrap(
-                                        runSpacing: 10,
-                                        spacing: 10,
+                                        runSpacing: 20,
+                                        spacing: 20,
                                         children: [
-                                          GestureDetector(
-                                            onTap: () {
-                                              Navigator.pushNamed(
-                                                  context, '/timetodeath');
-                                            },
-                                            child: Container(
-                                              width: 45,
-                                              height: 45,
-                                              child: Image.asset(
-                                                'assets/time_to_death.png',
-                                              ),
-                                            ),
-                                          ),
-                                          GestureDetector(
-                                            onTap: () {
-                                              Navigator.pushNamed(
-                                                  context, '/russeknutene');
-                                            },
-                                            child: Container(
-                                              width: 45,
-                                              height: 45,
-                                              child: Image.asset(
-                                                'assets/russeknutene.png',
-                                              ),
-                                            ),
-                                          ),
-                                          GestureDetector(
-                                            onTap: () {
-                                              Navigator.pushNamed(
-                                                  context, '/rated');
-                                            },
-                                            child: Container(
-                                              width: 45,
-                                              height: 45,
-                                              child: Image.asset(
-                                                'assets/rated.png',
-                                              ),
-                                            ),
-                                          ),
-                                          GestureDetector(
-                                            onTap: () {
-                                              Navigator.pushNamed(
-                                                  context, '/done');
-                                            },
-                                            child: Container(
-                                              width: 45,
-                                              height: 45,
-                                              child: Image.asset(
-                                                'assets/done.png',
-                                              ),
-                                            ),
-                                          ),
-                                          GestureDetector(
-                                            onTap: () {
-                                              Navigator.pushNamed(context,
-                                                  '/green_screen_studio');
-                                            },
-                                            child: Container(
-                                              width: 45,
-                                              height: 45,
-                                              child: Image.asset(
-                                                'assets/green_screen_studio.png',
-                                              ),
-                                            ),
-                                          ),
-                                          GestureDetector(
-                                            onTap: () {
-                                              Navigator.pushNamed(
-                                                  context, '/slurk');
-                                            },
-                                            child: Container(
-                                              width: 45,
-                                              height: 45,
-                                              child: Image.asset(
-                                                'assets/slurk.png',
-                                              ),
-                                            ),
+                                          LargeIconElement(
+                                            image: 'assets/dot.png',
+                                            name: 'Nothing Here',
                                           ),
                                         ],
                                       ),
