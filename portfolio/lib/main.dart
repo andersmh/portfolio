@@ -7,6 +7,7 @@ import 'package:portfolio/screens/rated.dart';
 import 'package:portfolio/screens/russeknutene.dart';
 import 'package:portfolio/screens/slurk.dart';
 import 'package:portfolio/screens/time_to_death.dart';
+import 'package:portfolio/screens/i_am.dart';
 
 void main() {
   runApp(MyApp());
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         '/russeknutene': (context) => Russeknutene(),
         '/slurk': (context) => Slurk(),
         '/timetodeath': (context) => TimeToDeath(),
+        '/iam': (context) => IAm(),
         '/contact': (context) => Contact(),
       },
       initialRoute: '/',

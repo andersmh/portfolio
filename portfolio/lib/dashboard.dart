@@ -18,7 +18,7 @@ class _DashboardState extends State<Dashboard> {
         physics: BouncingScrollPhysics(),
         child: SafeArea(
             child: Padding(
-          padding: MediaQuery.of(context).size.width < 500
+          padding: MediaQuery.of(context).size.width < 600
               ? const EdgeInsets.symmetric(
                   horizontal: 20,
                   vertical: 40,
@@ -32,24 +32,12 @@ class _DashboardState extends State<Dashboard> {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.max,
             children: [
-              MediaQuery.of(context).size.width < 500
+              MediaQuery.of(context).size.width < 600
                   ? Center(
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            'Apps',
-                            textAlign: TextAlign.start,
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.w900,
-                              fontSize: 40,
-                            ),
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
                           Stack(
                             children: [
                               ClipRRect(
@@ -64,7 +52,7 @@ class _DashboardState extends State<Dashboard> {
                                         height: MediaQuery.of(context)
                                                     .size
                                                     .width <
-                                                500
+                                                600
                                             ? MediaQuery.of(context).size.width
                                             : MediaQuery.of(context)
                                                     .size
@@ -72,7 +60,7 @@ class _DashboardState extends State<Dashboard> {
                                                 0.8,
                                         width:
                                             MediaQuery.of(context).size.width <
-                                                    500
+                                                    600
                                                 ? (MediaQuery.of(context)
                                                             .size
                                                             .width *
@@ -125,6 +113,16 @@ class _DashboardState extends State<Dashboard> {
                                                   image:
                                                       'assets/time_to_death.png',
                                                   name: 'Time To Death',
+                                                ),
+                                              ),
+                                              GestureDetector(
+                                                onTap: () {
+                                                  Navigator.pushNamed(
+                                                      context, '/iam');
+                                                },
+                                                child: SmallIconElement(
+                                                  image: 'assets/i_am.png',
+                                                  name: 'I am',
                                                 ),
                                               ),
                                               GestureDetector(
@@ -197,7 +195,11 @@ class _DashboardState extends State<Dashboard> {
                                       ),
                                     ),
                                     Container(
-                                      height: 50,
+                                      height:
+                                          MediaQuery.of(context).size.width >
+                                                  500
+                                              ? 65
+                                              : 55,
                                       width: MediaQuery.of(context).size.width,
                                       decoration: BoxDecoration(
                                         color: Colors.white.withOpacity(0.6),
@@ -266,18 +268,6 @@ class _DashboardState extends State<Dashboard> {
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
-                            'Apps',
-                            textAlign: TextAlign.start,
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontWeight: FontWeight.w900,
-                              fontSize: 40,
-                            ),
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
                           Stack(
                             children: [
                               ClipRRect(
@@ -346,6 +336,16 @@ class _DashboardState extends State<Dashboard> {
                                                   image:
                                                       'assets/time_to_death.png',
                                                   name: 'Time To Death',
+                                                ),
+                                              ),
+                                              GestureDetector(
+                                                onTap: () {
+                                                  Navigator.pushNamed(
+                                                      context, '/iam');
+                                                },
+                                                child: LargeIconElement(
+                                                  image: 'assets/i_am.png',
+                                                  name: 'I am',
                                                 ),
                                               ),
                                               GestureDetector(
