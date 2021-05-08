@@ -107,6 +107,17 @@ class _DashboardState extends State<Dashboard> {
                                               GestureDetector(
                                                 onTap: () {
                                                   Navigator.pushNamed(
+                                                      context, '/livestreamsimulator');
+                                                },
+                                                child: SmallIconElement(
+                                                  image:
+                                                      'assets/live_stream_simulator.png',
+                                                  name: 'LiveSim',
+                                                ),
+                                              ),
+                                              GestureDetector(
+                                                onTap: () {
+                                                  Navigator.pushNamed(
                                                       context, '/timetodeath');
                                                 },
                                                 child: SmallIconElement(
@@ -327,6 +338,17 @@ class _DashboardState extends State<Dashboard> {
                                             runSpacing: 20,
                                             spacing: 20,
                                             children: [
+                                              GestureDetector(
+                                                onTap: () {
+                                                  Navigator.pushNamed(
+                                                      context, '/livestreamsimulator');
+                                                },
+                                                child: LargeIconElement(
+                                                  image:
+                                                      'assets/live_stream_simulator.png',
+                                                  name: 'LiveSim',
+                                                ),
+                                              ),
                                               GestureDetector(
                                                 onTap: () {
                                                   Navigator.pushNamed(

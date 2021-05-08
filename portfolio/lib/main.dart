@@ -3,6 +3,7 @@ import 'package:portfolio/dashboard.dart';
 import 'package:portfolio/screens/contact.dart';
 import 'package:portfolio/screens/done.dart';
 import 'package:portfolio/screens/green_screen_studio.dart';
+import 'package:portfolio/screens/live_stream_simulator.dart';
 import 'package:portfolio/screens/rated.dart';
 import 'package:portfolio/screens/russeknutene.dart';
 import 'package:portfolio/screens/slurk.dart';
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
         '/slurk': (context) => Slurk(),
         '/timetodeath': (context) => TimeToDeath(),
         '/iam': (context) => IAm(),
+        '/livestreamsimulator': (context) => LiveStreamSimulator(),
         '/contact': (context) => Contact(),
       },
       initialRoute: '/',
